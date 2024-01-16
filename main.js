@@ -3,6 +3,12 @@ var tabcontents = document.getElementsByClassName("tab-contents");
 var sidemenu = document.getElementById("sidemenu");
 
 
+$(document).ready(function() {
+    $("#preloader").fadeOut(5000);
+});
+
+
+// JS CODE FOR TABS
 function opentab(tabname){
     for(tablink of tablinks){
         tablink.classList.remove("active-link")
@@ -14,6 +20,7 @@ function opentab(tabname){
     document.getElementById(tabname).classList.add("active-tab")
 }
 
+// JS CODE FOR PHONE MENU
 function openmenu(){
     sidemenu.style.right = "0";
 }
@@ -32,10 +39,6 @@ const observer = new IntersectionObserver((entries) => {
     });
 });
 
-
-
-
-
-
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
+
