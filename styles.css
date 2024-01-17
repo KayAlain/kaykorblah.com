@@ -14,6 +14,19 @@ body{
     /* overflow: hidden; */
 }
 
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ff4500;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, #a9a9a9);
+    border-radius: 10px;
+}
+
 #preloader {
     position: fixed;
     height: 100vh;
