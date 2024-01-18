@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200;400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', serif;
+    scroll-behavior: smooth;
+    text-decoration: none;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    /* overflow: hidden; */
+}
+
+::-webkit-scrollbar{
+    width: 15px;
+}
+
+::-webkit-scrollbar-track{
+    background: #ff4500;
+}
+
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(#000000, #a9a9a9);
+    border-radius: 10px;
+}
+
+#preloader {
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #0C0C0C;
+    z-index: 1000;
+}
+
+#header{
+    width: 100%;
+    height: 100vh;
+    background:  linear-gradient(45deg, rgba(0,0,0,0.85) ,rgba(255, 68, 0, 0.877)), url(./assets/img/background.jpg)no-repeat center/cover;
+    background-attachment: fixed;
+    color: #000;
+}
+
+.container {
+    padding: 10px 10%;
+  
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .fa-solid{
+    display: none;
+}
+
+
+.logo{
+    width: 140px;
+
+}
+
+.nav ul li {
+    display: inline-flex;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+.nav ul li a{
+    color: #000;
+    font-size: 18px;
+    position: relative;
+}
+
+.nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.7s;
+}
+
+.nav ul li a:hover::after{
+    width: 100%;
+}
+
+.content {
+    margin: 15% auto 0;
+}
+
+.content h1{
+    font-size: 65px;
+    font-weight: 400;
+}
+
+span {
+    font-weight: 700;
+}
+
+.btn {
+    background: linear-gradient(#6933ffc0, #ff4500);
+    color: #fff;
+    font-size: 16px;
+    padding: 16px 30px;
+    border-radius: 30px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+    .nav .fa-solid{
+        display: block;
+        font-size: 25px;
+        cursor: pointer;
+        transition: none;
+    }
+    .nav ul{
+        background: orangered;
+        position: fixed;
+        top: 0;
+        right: -250px;
+        width: 250px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 200;
+        transition: 1s;
+    }
+    .nav ul li{
+        display: block;
+        margin: 25px;
+    }
+    .nav ul .fa-solid{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+}
