@@ -48,11 +48,11 @@ body{
     background: url(./assets/img/background.jpg)no-repeat center/cover;
     background-attachment: fixed;
     color: #000;
+   
 }
 
 .container {
     padding: 10px 10%;
-  
 }
 
 .nav {
@@ -112,6 +112,8 @@ body{
 .header-text h2 span{
     color: orangered;
 }
+
+
 
 /* ------ about ---- */
 
