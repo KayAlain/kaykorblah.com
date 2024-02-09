@@ -94,6 +94,37 @@ body{
     width: 100%;
 }
 
+.hero {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+   
+}
+
+.hero .container {
+    background: rgba(137, 43, 226, 0.521);
+    max-width: 500px;
+    max-height: 300px;
+    border-radius: 8px;
+    top: 110px;
+}
+
+.hero h2 {
+    padding-bottom: 120px;
+}
+
+.container .btn {
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: rgba(0, 128, 0, 0.719);
+    color: #000;
+}
+
 
 
 
