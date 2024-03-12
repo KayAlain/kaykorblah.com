@@ -122,6 +122,10 @@ body{
     color: #ababab;
 }
 
+#about span {
+    color: #ff4500;
+}
+
 .row{
     display: flex;
     justify-content: space-between;
